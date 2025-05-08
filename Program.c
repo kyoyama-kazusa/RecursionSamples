@@ -1,7 +1,6 @@
 #define _CRT_SECURE_NO_WARNINGS
 
-#include <stdio.h>
-#include "Abp_TicTacToe.h"
+#include "Recursion_MergeSort.h"
 
 /// <summary>
 /// 程序主入口点。

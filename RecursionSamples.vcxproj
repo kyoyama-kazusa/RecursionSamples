@@ -133,12 +133,14 @@
     <ClCompile Include="Program.c" />
     <ClCompile Include="SudokuGrid.c" />
     <ClCompile Include="TicTacToeBoard.c" />
+    <ClCompile Include="Utils.c" />
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="Abp_TicTacToe.h" />
     <ClInclude Include="BinaryTree.h" />
     <ClInclude Include="Coordinate.h" />
     <ClInclude Include="Direction.h" />
+    <ClInclude Include="Recursion_MergeSort.h" />
     <ClInclude Include="Utils.h" />
     <ClInclude Include="Recursion_Fibonacci.h" />
     <ClInclude Include="Recursion_GetSubsets.h" />

@@ -64,6 +64,9 @@
     <ClCompile Include="Abp_TicTacToe.c">
       <Filter>6 alpha-beta 剪枝</Filter>
     </ClCompile>
+    <ClCompile Include="Utils.c">
+      <Filter>调试代码</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="Recursion_TraverseBinaryTree.h">
@@ -119,6 +122,9 @@
     </ClInclude>
     <ClInclude Include="Utils.h">
       <Filter>0 数据结构</Filter>
+    </ClInclude>
+    <ClInclude Include="Recursion_MergeSort.h">
+      <Filter>1 普通递归</Filter>
     </ClInclude>
   </ItemGroup>
 </Project>
