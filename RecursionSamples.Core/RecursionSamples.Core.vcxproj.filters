@@ -63,43 +63,43 @@
     <ClInclude Include="DataStructures\Utils.h">
       <Filter>0 数据结构</Filter>
     </ClInclude>
-    <ClInclude Include="Recursion\Recursion_Factorial.h">
+    <ClInclude Include="Recursion\Factorial.h">
       <Filter>1 普通递归</Filter>
     </ClInclude>
-    <ClInclude Include="Recursion\Recursion_Fibonacci.h">
+    <ClInclude Include="Recursion\Fibonacci.h">
       <Filter>1 普通递归</Filter>
     </ClInclude>
-    <ClInclude Include="Recursion\Recursion_GetSubsets.h">
+    <ClInclude Include="Recursion\GetSubsets.h">
       <Filter>1 普通递归</Filter>
     </ClInclude>
-    <ClInclude Include="Recursion\Recursion_Hanoi.h">
+    <ClInclude Include="Recursion\Hanoi.h">
       <Filter>1 普通递归</Filter>
     </ClInclude>
-    <ClInclude Include="Recursion\Recursion_IsEven.h">
+    <ClInclude Include="Recursion\IsEven.h">
       <Filter>1 普通递归</Filter>
     </ClInclude>
-    <ClInclude Include="Recursion\Recursion_MergeSort.h">
+    <ClInclude Include="Recursion\MergeSort.h">
       <Filter>1 普通递归</Filter>
     </ClInclude>
-    <ClInclude Include="Recursion\Recursion_QuickSort.h">
+    <ClInclude Include="Recursion\QuickSort.h">
       <Filter>1 普通递归</Filter>
     </ClInclude>
-    <ClInclude Include="Recursion\Recursion_TraverseBinaryTree.h">
+    <ClInclude Include="Recursion\TraverseBinaryTree.h">
       <Filter>1 普通递归</Filter>
     </ClInclude>
-    <ClInclude Include="TailRecursion\TailRecursion_Factorial.h">
+    <ClInclude Include="TailRecursion\Factorial.h">
       <Filter>2 尾递归</Filter>
     </ClInclude>
-    <ClInclude Include="TailRecursion\TailRecursion_IsEven.h">
+    <ClInclude Include="TailRecursion\IsEven.h">
       <Filter>2 尾递归</Filter>
     </ClInclude>
-    <ClInclude Include="Backtracking\Backtracking_Sudoku.h">
+    <ClInclude Include="Backtracking\Sudoku.h">
       <Filter>3 回溯</Filter>
     </ClInclude>
-    <ClInclude Include="DepthFirstSearching\Dfs_HamiltonianPath.h">
+    <ClInclude Include="DepthFirstSearching\HamiltonianPath.h">
       <Filter>4 深度优先</Filter>
     </ClInclude>
-    <ClInclude Include="AlphaBetaPruning\Abp_TicTacToe.h">
+    <ClInclude Include="AlphaBetaPruning\TicTacToe.h">
       <Filter>6 alpha-beta 剪枝</Filter>
     </ClInclude>
   </ItemGroup>
@@ -125,7 +125,7 @@
     <ClCompile Include="Program.c">
       <Filter>调试代码</Filter>
     </ClCompile>
-    <ClCompile Include="AlphaBetaPruning\Abp_TicTacToe.c">
+    <ClCompile Include="AlphaBetaPruning\TicTacToe.c">
       <Filter>6 alpha-beta 剪枝</Filter>
     </ClCompile>
   </ItemGroup>
