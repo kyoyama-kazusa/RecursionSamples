@@ -21,8 +21,8 @@
   <PropertyGroup Label="Globals">
     <VCProjectVersion>17.0</VCProjectVersion>
     <Keyword>Win32Proj</Keyword>
-    <ProjectGuid>{b3784cd7-6fad-4966-8851-e8625bd0ac1c}</ProjectGuid>
-    <RootNamespace>YCombinator</RootNamespace>
+    <ProjectGuid>{fbc7f9d0-743a-49b2-848e-d3a6a1ffdc7f}</ProjectGuid>
+    <RootNamespace>RecursionSamplesCore</RootNamespace>
     <WindowsTargetPlatformVersion>10.0</WindowsTargetPlatformVersion>
   </PropertyGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
@@ -123,7 +123,36 @@
     </Link>
   </ItemDefinitionGroup>
   <ItemGroup>
-    <ClCompile Include="YCombinator.cpp" />
+    <ClInclude Include="AlphaBetaPruning\Abp_TicTacToe.h" />
+    <ClInclude Include="Backtracking\Backtracking_Sudoku.h" />
+    <ClInclude Include="DataStructures\BinaryTree.h" />
+    <ClInclude Include="DataStructures\Coordinate.h" />
+    <ClInclude Include="DataStructures\Direction.h" />
+    <ClInclude Include="DataStructures\LinkedList.h" />
+    <ClInclude Include="DataStructures\SudokuGrid.h" />
+    <ClInclude Include="DataStructures\TicTaeToeBoard.h" />
+    <ClInclude Include="DataStructures\Utils.h" />
+    <ClInclude Include="DepthFirstSearching\Dfs_HamiltonianPath.h" />
+    <ClInclude Include="Recursion\Recursion_Factorial.h" />
+    <ClInclude Include="Recursion\Recursion_Fibonacci.h" />
+    <ClInclude Include="Recursion\Recursion_GetSubsets.h" />
+    <ClInclude Include="Recursion\Recursion_Hanoi.h" />
+    <ClInclude Include="Recursion\Recursion_IsEven.h" />
+    <ClInclude Include="Recursion\Recursion_MergeSort.h" />
+    <ClInclude Include="Recursion\Recursion_QuickSort.h" />
+    <ClInclude Include="Recursion\Recursion_TraverseBinaryTree.h" />
+    <ClInclude Include="TailRecursion\TailRecursion_Factorial.h" />
+    <ClInclude Include="TailRecursion\TailRecursion_IsEven.h" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="AlphaBetaPruning\Abp_TicTacToe.c" />
+    <ClCompile Include="DataStructures\BinaryTree.c" />
+    <ClCompile Include="DataStructures\Direction.c" />
+    <ClCompile Include="DataStructures\LinkedList.c" />
+    <ClCompile Include="DataStructures\SudokuGrid.c" />
+    <ClCompile Include="DataStructures\TicTacToeBoard.c" />
+    <ClCompile Include="DataStructures\Utils.c" />
+    <ClCompile Include="Program.c" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">

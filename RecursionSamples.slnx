@@ -3,6 +3,6 @@
     <Platform Name="x64" />
     <Platform Name="x86" />
   </Configurations>
-  <Project Path="RecursionSamples.vcxproj" Id="906a81af-e939-4f4b-8c39-11baccf3b7a9" />
-  <Project Path="YCombinator/YCombinator.vcxproj" Id="b3784cd7-6fad-4966-8851-e8625bd0ac1c" />
+  <Project Path="RecursionSamples.Core/RecursionSamples.Core.vcxproj" Id="fbc7f9d0-743a-49b2-848e-d3a6a1ffdc7f" />
+  <Project Path="RecursionSamples.YCombinator/RecursionSamples.YCombinator.vcxproj" Id="7d4da50f-37e7-46fe-941e-7c0b3d2471d1" />
 </Solution>

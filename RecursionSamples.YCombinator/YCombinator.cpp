@@ -1,6 +1,11 @@
 #include <iostream>
 #include <functional>
 
+/// <summary>
+/// 表示一个映射函数。
+/// </summary>
+/// <typeparam name="T">表示输入的类型。</typeparam>
+/// <typeparam name="TResult">表示返回的类型。</typeparam>
 template<class T, class TResult>
 using Projection = std::function<TResult(T)>;
 

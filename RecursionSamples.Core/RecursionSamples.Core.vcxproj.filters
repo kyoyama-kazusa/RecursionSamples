@@ -1,0 +1,132 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="0 数据结构">
+      <UniqueIdentifier>{43f19023-9928-4a79-b603-293e1de9f9ce}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="0 数据结构\数独盘面">
+      <UniqueIdentifier>{1e2b7d0f-9527-4c80-a717-076fc8a7c8c0}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="0 数据结构\二叉树">
+      <UniqueIdentifier>{6971a0f0-c655-472e-b52b-6fbd79f33a9f}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="0 数据结构\链表">
+      <UniqueIdentifier>{4be599a2-ae08-4fa9-a338-67025c46f57e}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="0 数据结构\方向和坐标">
+      <UniqueIdentifier>{32cd9896-5020-4f37-9f4b-0e6df140edac}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="0 数据结构\井字棋盘面">
+      <UniqueIdentifier>{af1d7910-feb5-4d04-b0b4-f1f6459352b9}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="1 普通递归">
+      <UniqueIdentifier>{3cbf804b-a50e-4702-8ae4-6af9f52253a7}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="2 尾递归">
+      <UniqueIdentifier>{8c287c2c-a9a3-49ef-8ae7-5a717d90aa76}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="3 回溯">
+      <UniqueIdentifier>{1d854c9c-0fdb-484c-a618-82f7c7b8aac7}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="4 深度优先">
+      <UniqueIdentifier>{37fe8dac-1683-46c3-8a2e-6380bfc15a61}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="5 剪枝">
+      <UniqueIdentifier>{6184230f-2411-4748-9053-7c104c700624}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="6 alpha-beta 剪枝">
+      <UniqueIdentifier>{73b6a80b-7ed6-4dee-ab8f-29a14ddcab23}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="调试代码">
+      <UniqueIdentifier>{e4afad2e-9279-416d-a399-16362621e542}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="DataStructures\BinaryTree.h">
+      <Filter>0 数据结构\二叉树</Filter>
+    </ClInclude>
+    <ClInclude Include="DataStructures\Coordinate.h">
+      <Filter>0 数据结构\方向和坐标</Filter>
+    </ClInclude>
+    <ClInclude Include="DataStructures\Direction.h">
+      <Filter>0 数据结构\方向和坐标</Filter>
+    </ClInclude>
+    <ClInclude Include="DataStructures\TicTaeToeBoard.h">
+      <Filter>0 数据结构\井字棋盘面</Filter>
+    </ClInclude>
+    <ClInclude Include="DataStructures\LinkedList.h">
+      <Filter>0 数据结构\链表</Filter>
+    </ClInclude>
+    <ClInclude Include="DataStructures\SudokuGrid.h">
+      <Filter>0 数据结构\数独盘面</Filter>
+    </ClInclude>
+    <ClInclude Include="DataStructures\Utils.h">
+      <Filter>0 数据结构</Filter>
+    </ClInclude>
+    <ClInclude Include="Recursion\Recursion_Factorial.h">
+      <Filter>1 普通递归</Filter>
+    </ClInclude>
+    <ClInclude Include="Recursion\Recursion_Fibonacci.h">
+      <Filter>1 普通递归</Filter>
+    </ClInclude>
+    <ClInclude Include="Recursion\Recursion_GetSubsets.h">
+      <Filter>1 普通递归</Filter>
+    </ClInclude>
+    <ClInclude Include="Recursion\Recursion_Hanoi.h">
+      <Filter>1 普通递归</Filter>
+    </ClInclude>
+    <ClInclude Include="Recursion\Recursion_IsEven.h">
+      <Filter>1 普通递归</Filter>
+    </ClInclude>
+    <ClInclude Include="Recursion\Recursion_MergeSort.h">
+      <Filter>1 普通递归</Filter>
+    </ClInclude>
+    <ClInclude Include="Recursion\Recursion_QuickSort.h">
+      <Filter>1 普通递归</Filter>
+    </ClInclude>
+    <ClInclude Include="Recursion\Recursion_TraverseBinaryTree.h">
+      <Filter>1 普通递归</Filter>
+    </ClInclude>
+    <ClInclude Include="TailRecursion\TailRecursion_Factorial.h">
+      <Filter>2 尾递归</Filter>
+    </ClInclude>
+    <ClInclude Include="TailRecursion\TailRecursion_IsEven.h">
+      <Filter>2 尾递归</Filter>
+    </ClInclude>
+    <ClInclude Include="Backtracking\Backtracking_Sudoku.h">
+      <Filter>3 回溯</Filter>
+    </ClInclude>
+    <ClInclude Include="DepthFirstSearching\Dfs_HamiltonianPath.h">
+      <Filter>4 深度优先</Filter>
+    </ClInclude>
+    <ClInclude Include="AlphaBetaPruning\Abp_TicTacToe.h">
+      <Filter>6 alpha-beta 剪枝</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="DataStructures\BinaryTree.c">
+      <Filter>0 数据结构\二叉树</Filter>
+    </ClCompile>
+    <ClCompile Include="DataStructures\Direction.c">
+      <Filter>0 数据结构\方向和坐标</Filter>
+    </ClCompile>
+    <ClCompile Include="DataStructures\TicTacToeBoard.c">
+      <Filter>0 数据结构\井字棋盘面</Filter>
+    </ClCompile>
+    <ClCompile Include="DataStructures\LinkedList.c">
+      <Filter>0 数据结构\链表</Filter>
+    </ClCompile>
+    <ClCompile Include="DataStructures\SudokuGrid.c">
+      <Filter>0 数据结构\数独盘面</Filter>
+    </ClCompile>
+    <ClCompile Include="DataStructures\Utils.c">
+      <Filter>0 数据结构</Filter>
+    </ClCompile>
+    <ClCompile Include="Program.c">
+      <Filter>调试代码</Filter>
+    </ClCompile>
+    <ClCompile Include="AlphaBetaPruning\Abp_TicTacToe.c">
+      <Filter>6 alpha-beta 剪枝</Filter>
+    </ClCompile>
+  </ItemGroup>
+</Project>

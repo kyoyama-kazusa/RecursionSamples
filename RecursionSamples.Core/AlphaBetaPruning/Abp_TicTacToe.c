@@ -1,5 +1,5 @@
-#include "TicTaeToeBoard.h"
-#include "Utils.h"
+#include "../DataStructures/TicTaeToeBoard.h"
+#include "../DataStructures/Utils.h"
 #include <float.h>
 
 // 如果带有此符号，则 AI 选格子会优先先选取中心单元格作为起始步骤，因为它人脑逻辑上讲可保证不失败或胜利，
