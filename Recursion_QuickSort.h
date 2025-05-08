@@ -13,7 +13,6 @@ void entry(void) {
 	print_array(array, 9);
 
 	quick_sort(array, 0, 8);
-
 	print_array(array, 9);
 }
 
