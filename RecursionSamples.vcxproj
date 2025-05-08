@@ -141,6 +141,7 @@
     <ClInclude Include="Coordinate.h" />
     <ClInclude Include="Direction.h" />
     <ClInclude Include="Recursion_MergeSort.h" />
+    <ClInclude Include="Recursion_QuickSort.h" />
     <ClInclude Include="Utils.h" />
     <ClInclude Include="Recursion_Fibonacci.h" />
     <ClInclude Include="Recursion_GetSubsets.h" />

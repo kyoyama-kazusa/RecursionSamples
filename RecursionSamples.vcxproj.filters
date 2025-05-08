@@ -126,5 +126,8 @@
     <ClInclude Include="Recursion_MergeSort.h">
       <Filter>1 普通递归</Filter>
     </ClInclude>
+    <ClInclude Include="Recursion_QuickSort.h">
+      <Filter>1 普通递归</Filter>
+    </ClInclude>
   </ItemGroup>
 </Project>
