@@ -1,6 +1,6 @@
 #pragma once
 
-#include "SudokuGrid.h"
+#include "../DataStructures/SudokuGrid.h"
 #include <stdlib.h>
 
 void entry(void) {

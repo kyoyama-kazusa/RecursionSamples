@@ -1,6 +1,6 @@
 #pragma once
 
-#include "TicTaeToeBoard.h"
+#include "../DataStructures/TicTaeToeBoard.h"
 #include <stdio.h>
 
 double minimax(TicTacToeBoard *const, double, double, bool);

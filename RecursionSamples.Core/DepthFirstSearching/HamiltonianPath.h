@@ -1,7 +1,7 @@
 #pragma once
 
-#include "Coordinate.h"
-#include "Direction.h"
+#include "../DataStructures/Coordinate.h"
+#include "../DataStructures/Direction.h"
 #include <stdbool.h>
 #include <stdio.h>
 
