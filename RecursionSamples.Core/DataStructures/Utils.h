@@ -11,4 +11,7 @@
 #define MIN(a,b) (((a) < (b)) ? (a) : (b))
 #endif // !MIN
 
+// 将变量、表达式等内容转为等价的字符串写法。
+#define nameof(x) #x
+
 void print_array(int *, int);
