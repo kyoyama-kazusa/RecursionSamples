@@ -4,8 +4,8 @@
 #include <stdlib.h>
 #include <string.h>
 
-_Bool backtrack_solve_grid_core(const SudokuGrid *const, SudokuGrid *const, const int);
-_Bool is_valid(const SudokuGrid *const, const int, const int);
+bool backtrack_solve_grid_core(const SudokuGrid *const, SudokuGrid *const, const int);
+bool is_valid(const SudokuGrid *const, const int, const int);
 
 /// <summary>
 /// 解析一个字符串，将其解析为等价的数独盘面信息，并返回。
@@ -68,7 +68,7 @@ void print_grid(const SudokuGrid *const grid) {
 	printf("\n");
 }
 
-static _Bool backtrack_solve_grid_core(const SudokuGrid *const grid, SudokuGrid *const solution, const int next) {
+static bool backtrack_solve_grid_core(const SudokuGrid *const grid, SudokuGrid *const solution, const int next) {
 	if (next == 81) {
 		// 题目解完。退出当前层的递归。
 		return true;
@@ -109,7 +109,7 @@ static _Bool backtrack_solve_grid_core(const SudokuGrid *const grid, SudokuGrid 
 	return false;
 }
 
-static _Bool is_valid(const SudokuGrid *const grid, const int r, const int c) {
+static bool is_valid(const SudokuGrid *const grid, const int r, const int c) {
 	int digit = grid->digits[r * 9 + c];
 	for (int i = 0; i < 9; i++) {
 		if (i != r && grid->digits[i * 9 + c] == digit
