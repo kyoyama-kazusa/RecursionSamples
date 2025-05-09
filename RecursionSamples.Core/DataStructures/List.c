@@ -10,7 +10,7 @@ bool resize(List *, int);
 /// </summary>
 /// <param name="list">顺序表。</param>
 /// <param name="initial_capacity">初始化的容量。</param>
-/// <returns>顺序表是否内存分配完成并成功创建。</returns>
+/// <returns>顺序表是否内存分配完成并成功创建。需要先调用 dispose_list 后调用 free 函数释放。</returns>
 List *create_list(int initial_capacity) {
 	if (initial_capacity <= 0) {
 		return false;

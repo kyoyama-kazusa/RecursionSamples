@@ -132,6 +132,7 @@
     <ClInclude Include="DataStructures\Direction.h" />
     <ClInclude Include="DataStructures\List.h" />
     <ClInclude Include="DataStructures\SinglyLinkedList.h" />
+    <ClInclude Include="DataStructures\Stack.h" />
     <ClInclude Include="DataStructures\SudokuGrid.h" />
     <ClInclude Include="DataStructures\TicTaeToeBoard.h" />
     <ClInclude Include="DataStructures\Utils.h" />
@@ -153,6 +154,7 @@
     <ClCompile Include="DataStructures\Direction.c" />
     <ClCompile Include="DataStructures\List.c" />
     <ClCompile Include="DataStructures\SinglyLinkedList.c" />
+    <ClCompile Include="DataStructures\Stack.c" />
     <ClCompile Include="DataStructures\SudokuGrid.c" />
     <ClCompile Include="DataStructures\TicTacToeBoard.c" />
     <ClCompile Include="DataStructures\Utils.c" />

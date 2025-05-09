@@ -40,6 +40,9 @@
     <Filter Include="0 数据结构\顺序表">
       <UniqueIdentifier>{48e045cd-6150-4da2-a84d-e136c704b7bc}</UniqueIdentifier>
     </Filter>
+    <Filter Include="0 数据结构\栈">
+      <UniqueIdentifier>{b249baf6-340b-47ca-80e7-5a8fab4b3b28}</UniqueIdentifier>
+    </Filter>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="DataStructures\BinaryTree.h">
@@ -105,6 +108,9 @@
     <ClInclude Include="DataStructures\List.h">
       <Filter>0 数据结构\顺序表</Filter>
     </ClInclude>
+    <ClInclude Include="DataStructures\Stack.h">
+      <Filter>0 数据结构\栈</Filter>
+    </ClInclude>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="DataStructures\BinaryTree.c">
@@ -131,6 +137,9 @@
     <ClCompile Include="Program.c" />
     <ClCompile Include="DataStructures\List.c">
       <Filter>0 数据结构\顺序表</Filter>
+    </ClCompile>
+    <ClCompile Include="DataStructures\Stack.c">
+      <Filter>0 数据结构\栈</Filter>
     </ClCompile>
   </ItemGroup>
 </Project>

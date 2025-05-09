@@ -9,6 +9,7 @@
 * 基础数据结构
   * 顺序表 `List`
   * 单向链表 `SinglyLinkedList`
+  * 栈 `Stack`
   * 二叉树 `BinaryTree`
   * 用于项目内操作的数据结构
 	* 方向和坐标 `Coordinate` 和 `Direction`
