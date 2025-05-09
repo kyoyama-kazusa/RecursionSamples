@@ -1,6 +1,5 @@
 #pragma once
 
-
 /// <summary>
 /// 表示二叉树节点类型。
 /// </summary>
