@@ -37,6 +37,9 @@
     <Filter Include="6 alpha-beta 剪枝">
       <UniqueIdentifier>{73b6a80b-7ed6-4dee-ab8f-29a14ddcab23}</UniqueIdentifier>
     </Filter>
+    <Filter Include="0 数据结构\顺序表">
+      <UniqueIdentifier>{48e045cd-6150-4da2-a84d-e136c704b7bc}</UniqueIdentifier>
+    </Filter>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="DataStructures\BinaryTree.h">
@@ -99,6 +102,9 @@
     <ClInclude Include="AlphaBetaPruning\TicTacToe.h">
       <Filter>6 alpha-beta 剪枝</Filter>
     </ClInclude>
+    <ClInclude Include="DataStructures\List.h">
+      <Filter>0 数据结构\顺序表</Filter>
+    </ClInclude>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="DataStructures\BinaryTree.c">
@@ -123,5 +129,8 @@
       <Filter>6 alpha-beta 剪枝</Filter>
     </ClCompile>
     <ClCompile Include="Program.c" />
+    <ClCompile Include="DataStructures\List.c">
+      <Filter>0 数据结构\顺序表</Filter>
+    </ClCompile>
   </ItemGroup>
 </Project>

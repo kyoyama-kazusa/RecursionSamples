@@ -1,5 +1,7 @@
 #pragma once
 
+#include "Utils.h"
+
 /// <summary>
 /// 定义一个单向链表的节点。
 /// </summary>
@@ -13,7 +15,7 @@ typedef struct SinglyLinkedListNode {
 	/// 表示链表指向的下一个元素。
 	/// </summary>
 	struct SinglyLinkedListNode *next;
-} LinkedListNode;
+} SinglyLinkedListNode;
 
 /// <summary>
 /// 定义一个单向链表。
@@ -22,21 +24,21 @@ typedef struct SinglyLinkedList {
 	/// <summary>
 	/// 表示链表的头节点。
 	/// </summary>
-	LinkedListNode *head;
-} LinkedList;
+	SinglyLinkedListNode *head;
+} SinglyLinkedList;
 
 /// <summary>
 /// 表示遍历链表节点的函数指针。
 /// </summary>
-typedef void (*LinkedListTraverseAction)(const LinkedListNode *const);
+typedef void (*SinglyLinkedListTraverseAction)(const SinglyLinkedListNode *const);
 
-void linked_list_add(LinkedList *const, int);
-void linked_list_insert(LinkedListNode *, int);
-void linked_list_dispose(LinkedList *const);
-void linked_list_traverse(const LinkedList *const, LinkedListTraverseAction);
-int linked_list_count(const LinkedList *const);
-LinkedList *create_linked_list(void);
-LinkedListNode *linked_list_tail(const LinkedList *const);
-const LinkedListNode *linked_list_element_at(const LinkedList *const, int);
-const LinkedListNode *const linked_list_index_of(const LinkedList *const, int);
-const LinkedListNode *const linked_list_remove(LinkedList *const, int);
+void linked_list_add(SinglyLinkedList *const, int);
+void linked_list_insert(SinglyLinkedListNode *, int);
+void linked_list_dispose(SinglyLinkedList *const);
+void linked_list_traverse(const SinglyLinkedList *const, SinglyLinkedListTraverseAction);
+int linked_list_count(const SinglyLinkedList *const);
+SinglyLinkedList *create_linked_list(void);
+SinglyLinkedListNode *linked_list_tail(const SinglyLinkedList *const);
+const SinglyLinkedListNode *linked_list_element_at(const SinglyLinkedList *const, int);
+const SinglyLinkedListNode *const linked_list_index_of(const SinglyLinkedList *const, int);
+const SinglyLinkedListNode *const linked_list_remove(SinglyLinkedList *const, int);
