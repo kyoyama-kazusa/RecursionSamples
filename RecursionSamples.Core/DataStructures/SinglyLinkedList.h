@@ -1,9 +1,9 @@
 #pragma once
 
 /// <summary>
-/// 定义一个链表的节点。
+/// 定义一个单向链表的节点。
 /// </summary>
-typedef struct LinkedListNode {
+typedef struct SinglyLinkedListNode {
 	/// <summary>
 	/// 表示链表存储的数值。
 	/// </summary>
@@ -12,13 +12,13 @@ typedef struct LinkedListNode {
 	/// <summary>
 	/// 表示链表指向的下一个元素。
 	/// </summary>
-	struct LinkedListNode *next;
+	struct SinglyLinkedListNode *next;
 } LinkedListNode;
 
 /// <summary>
-/// 定义一个链表。
+/// 定义一个单向链表。
 /// </summary>
-typedef struct LinkedList {
+typedef struct SinglyLinkedList {
 	/// <summary>
 	/// 表示链表的头节点。
 	/// </summary>

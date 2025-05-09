@@ -51,7 +51,7 @@
     <ClInclude Include="DataStructures\TicTaeToeBoard.h">
       <Filter>0 数据结构\井字棋盘面</Filter>
     </ClInclude>
-    <ClInclude Include="DataStructures\LinkedList.h">
+    <ClInclude Include="DataStructures\SinglyLinkedList.h">
       <Filter>0 数据结构\链表</Filter>
     </ClInclude>
     <ClInclude Include="DataStructures\SudokuGrid.h">
@@ -110,7 +110,7 @@
     <ClCompile Include="DataStructures\TicTacToeBoard.c">
       <Filter>0 数据结构\井字棋盘面</Filter>
     </ClCompile>
-    <ClCompile Include="DataStructures\LinkedList.c">
+    <ClCompile Include="DataStructures\SinglyLinkedList.c">
       <Filter>0 数据结构\链表</Filter>
     </ClCompile>
     <ClCompile Include="DataStructures\SudokuGrid.c">

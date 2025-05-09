@@ -128,7 +128,7 @@
     <ClInclude Include="DataStructures\BinaryTree.h" />
     <ClInclude Include="DataStructures\Coordinate.h" />
     <ClInclude Include="DataStructures\Direction.h" />
-    <ClInclude Include="DataStructures\LinkedList.h" />
+    <ClInclude Include="DataStructures\SinglyLinkedList.h" />
     <ClInclude Include="DataStructures\SudokuGrid.h" />
     <ClInclude Include="DataStructures\TicTaeToeBoard.h" />
     <ClInclude Include="DataStructures\Utils.h" />
@@ -148,7 +148,7 @@
     <ClCompile Include="AlphaBetaPruning\TicTacToe.c" />
     <ClCompile Include="DataStructures\BinaryTree.c" />
     <ClCompile Include="DataStructures\Direction.c" />
-    <ClCompile Include="DataStructures\LinkedList.c" />
+    <ClCompile Include="DataStructures\SinglyLinkedList.c" />
     <ClCompile Include="DataStructures\SudokuGrid.c" />
     <ClCompile Include="DataStructures\TicTacToeBoard.c" />
     <ClCompile Include="DataStructures\Utils.c" />
