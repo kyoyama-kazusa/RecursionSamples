@@ -37,9 +37,6 @@
     <Filter Include="6 alpha-beta 剪枝">
       <UniqueIdentifier>{73b6a80b-7ed6-4dee-ab8f-29a14ddcab23}</UniqueIdentifier>
     </Filter>
-    <Filter Include="调试代码">
-      <UniqueIdentifier>{e4afad2e-9279-416d-a399-16362621e542}</UniqueIdentifier>
-    </Filter>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="DataStructures\BinaryTree.h">
@@ -122,11 +119,9 @@
     <ClCompile Include="DataStructures\Utils.c">
       <Filter>0 数据结构</Filter>
     </ClCompile>
-    <ClCompile Include="Program.c">
-      <Filter>调试代码</Filter>
-    </ClCompile>
     <ClCompile Include="AlphaBetaPruning\TicTacToe.c">
       <Filter>6 alpha-beta 剪枝</Filter>
     </ClCompile>
+    <ClCompile Include="Program.c" />
   </ItemGroup>
 </Project>
