@@ -5,11 +5,11 @@
 unsigned long long factorial(int value);
 
 void entry(void) {
-	printf("0 的阶乘是 %lld。\n", factorial(0, 1));
-	printf("1 的阶乘是 %lld。\n", factorial(1, 1));
-	printf("3 的阶乘是 %lld。\n", factorial(3, 1));
-	printf("10 的阶乘是 %lld。\n", factorial(10, 1));
-	printf("15 的阶乘是 %lld。\n", factorial(15, 1));
+	printf("0 的阶乘是 %lld。\n", factorial(0));
+	printf("1 的阶乘是 %lld。\n", factorial(1));
+	printf("3 的阶乘是 %lld。\n", factorial(3));
+	printf("10 的阶乘是 %lld。\n", factorial(10));
+	printf("15 的阶乘是 %lld。\n", factorial(15));
 }
 
 /// <summary>
