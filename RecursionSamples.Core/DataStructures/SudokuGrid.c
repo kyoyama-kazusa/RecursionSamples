@@ -37,15 +37,6 @@ SudokuGrid *const parse_grid(const char *const str) {
 }
 
 /// <summary>
-/// 拷贝当前题目。
-/// </summary>
-/// <param name="source">原来的题目。</param>
-/// <param name="target">结果题目。</param>
-void copy_grid(const SudokuGrid *const source, SudokuGrid *const target) {
-	memcpy(target->digits, source->digits, sizeof(int) * 81);
-}
-
-/// <summary>
 /// 使用回溯法解决一个数独题目。
 /// </summary>
 /// <param name="grid">数独题目。</param>

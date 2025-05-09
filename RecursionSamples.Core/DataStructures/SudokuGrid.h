@@ -13,6 +13,5 @@ typedef struct {
 } SudokuGrid;
 
 SudokuGrid *const parse_grid(const char *const);
-void copy_grid(const SudokuGrid *const source, SudokuGrid *const target);
 void print_grid(const SudokuGrid *const);
 void backtrack_solve_grid(const SudokuGrid *const, SudokuGrid *const);

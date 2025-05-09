@@ -9,8 +9,8 @@ void entry(void) {
 	SudokuGrid *const grid = parse_grid(input);
 	print_grid(grid);
 
-	SudokuGrid solution = { 0 };
-	copy_grid(grid, &solution);
+	// ¿½±´Ò»·Ý¡£
+	SudokuGrid solution = *grid;
 	backtrack_solve_grid(grid, &solution);
 	print_grid(&solution);
 
