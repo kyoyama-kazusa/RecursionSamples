@@ -4,7 +4,7 @@
 #include <stdlib.h>
 #include <string.h>
 
-bool backtrack_solve_grid_core(const SudokuGrid *const, SudokuGrid *const, const int);
+bool backtrack_solve_grid_core(const SudokuGrid *const, SudokuGrid *const, int);
 bool is_valid(const SudokuGrid *const, const int, const int);
 
 /// <summary>
@@ -68,7 +68,7 @@ void print_grid(const SudokuGrid *const grid) {
 	printf("\n");
 }
 
-static bool backtrack_solve_grid_core(const SudokuGrid *const grid, SudokuGrid *const solution, const int next) {
+static bool backtrack_solve_grid_core(const SudokuGrid *const grid, SudokuGrid *const solution, int next) {
 	if (next == 81) {
 		// 题目解完。退出当前层的递归。
 		return true;
