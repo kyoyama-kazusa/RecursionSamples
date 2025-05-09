@@ -19,7 +19,8 @@ typedef void (*StackTraverseAction)(int);
 
 void push(Stack *const, int);
 void traverse(const Stack *const, StackTraverseAction);
-void dispose_stack(Stack *const stack);
+void dispose_stack(Stack *const);
 int pop(Stack *const);
 int peek(const Stack *const);
+int get_stack_size(const Stack *const);
 Stack *create_stack(int);

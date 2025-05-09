@@ -137,6 +137,7 @@
     <ClInclude Include="DataStructures\TicTaeToeBoard.h" />
     <ClInclude Include="DataStructures\Utils.h" />
     <ClInclude Include="DepthFirstSearching\HamiltonianPath.h" />
+    <ClInclude Include="RecursionToIteration\Factorial.h" />
     <ClInclude Include="Recursion\Factorial.h" />
     <ClInclude Include="Recursion\Fibonacci.h" />
     <ClInclude Include="Recursion\GetSubsets.h" />

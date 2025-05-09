@@ -1,7 +1,7 @@
 #pragma once
 
-#include "Utils.h"
 #include <stdio.h>
+#include "../DataStructures/Utils.h"
 
 #define N 6
 #define M 3

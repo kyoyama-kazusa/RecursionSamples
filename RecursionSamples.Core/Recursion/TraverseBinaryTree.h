@@ -1,6 +1,6 @@
 #pragma once
 
-#include "BinaryTree.h"
+#include "../DataStructures/BinaryTree.h"
 #include <stdio.h>
 #include <stdlib.h>
 

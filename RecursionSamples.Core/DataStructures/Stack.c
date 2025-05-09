@@ -47,6 +47,15 @@ int peek(const Stack *const stack) {
 }
 
 /// <summary>
+/// 获取当前栈的元素数量。
+/// </summary>
+/// <param name="stack">栈。</param>
+/// <returns>元素数量。</returns>
+int get_stack_size(const Stack *const stack) {
+	return stack->backing_list->size;
+}
+
+/// <summary>
 /// 遍历集合里的每一个元素。
 /// </summary>
 /// <param name="stack">栈。</param>

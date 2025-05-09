@@ -43,6 +43,9 @@
     <Filter Include="0 数据结构\栈">
       <UniqueIdentifier>{b249baf6-340b-47ca-80e7-5a8fab4b3b28}</UniqueIdentifier>
     </Filter>
+    <Filter Include="7 递归转循环">
+      <UniqueIdentifier>{a8ffbc87-6ca0-470b-a721-fef00c043be2}</UniqueIdentifier>
+    </Filter>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="DataStructures\BinaryTree.h">
@@ -110,6 +113,9 @@
     </ClInclude>
     <ClInclude Include="DataStructures\Stack.h">
       <Filter>0 数据结构\栈</Filter>
+    </ClInclude>
+    <ClInclude Include="RecursionToIteration\Factorial.h">
+      <Filter>7 递归转循环</Filter>
     </ClInclude>
   </ItemGroup>
   <ItemGroup>
