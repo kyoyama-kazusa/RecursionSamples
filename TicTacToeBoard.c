@@ -63,6 +63,21 @@ void get_available_moves(const TicTacToeBoard *const board, int *const positions
 }
 
 /// <summary>
+/// 获取当前盘面还剩下多少空格没有填。
+/// </summary>
+/// <param name="board">盘面。</param>
+/// <returns>还有多少个空格。</returns>
+int get_last_empty_spaces_count(const TicTacToeBoard *const board) {
+	int result = 0;
+	for (int i = 0; i < 9; i++) {
+		if (board->board[i] == PLACEHOLDER_CELL) {
+			result++;
+		}
+	}
+	return result;
+}
+
+/// <summary>
 /// 检查指定玩家（参数 player_char 传入对应玩家使用的符号）是否胜利。
 /// </summary>
 /// <param name="board">盘面数据。</param>

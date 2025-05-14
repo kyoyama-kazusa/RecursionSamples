@@ -3,7 +3,7 @@
 #include "TicTaeToeBoard.h"
 #include <stdio.h>
 
-double minimax(TicTacToeBoard *const, double, double, bool);
+int minimax(TicTacToeBoard *const, int, int, bool);
 int ai_move(TicTacToeBoard *const);
 int get_human_input(const TicTacToeBoard *const);
 
