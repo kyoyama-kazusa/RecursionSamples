@@ -1,6 +1,6 @@
 #define _CRT_SECURE_NO_WARNINGS
 
-#include "Recursion/QuickSort.h"
+#include "Recursion/Hanoi.h"
 
 /// <summary>
 /// 程序主入口点。

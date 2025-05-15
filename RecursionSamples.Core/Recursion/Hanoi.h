@@ -18,7 +18,7 @@ void entry(void) {
 static void printer(const char *const base, const char *const target) {
 	char sequences[3] = { 'a', 'b', 'c' };
 	char baseColumnChar = strcmp(base, "初始列") == 0 ? sequences[0] : strcmp(base, "辅助列") == 0 ? sequences[1] : sequences[2];
-	char targetColumnChar = strcmp(target, "初始列") == 0 ? sequences[0] : strcmp(base, "辅助列") == 0 ? sequences[1] : sequences[2];
+	char targetColumnChar = strcmp(target, "初始列") == 0 ? sequences[0] : strcmp(target, "辅助列") == 0 ? sequences[1] : sequences[2];
 	printf("移动%s的圆盘到%s去（%c -> %c）\n", base, target, baseColumnChar, targetColumnChar);
 }
 
