@@ -5,15 +5,15 @@
 #include <stdbool.h>
 #include <stdio.h>
 
-#define N 6
-#define PUZZLE_CELLS_COUNT ((N) * (N) - 5)
+#define LAYERS_COUNT 6
+#define PUZZLE_CELLS_COUNT ((LAYERS_COUNT) * (LAYERS_COUNT) - 5)
 
 typedef signed char Cell;
 
-void print_puzzle(const Cell(*const)[N]);
-bool dfs(const Cell(*const)[N], Cell(*)[N], Coordinate, Direction *, int);
-bool is_solved(const Cell(*const)[N], const Cell(*const)[N]);
-bool is_valid_coordinate(Coordinate, const Cell(*const)[N], const Cell(*const)[N]);
+void print_puzzle(const Cell(*const)[LAYERS_COUNT]);
+bool dfs(const Cell(*const)[LAYERS_COUNT], Cell(*)[LAYERS_COUNT], Coordinate, Direction *, int);
+bool is_solved(const Cell(*const)[LAYERS_COUNT], const Cell(*const)[LAYERS_COUNT]);
+bool is_valid_coordinate(Coordinate, const Cell(*const)[LAYERS_COUNT], const Cell(*const)[LAYERS_COUNT]);
 Coordinate get_coordinate(Coordinate, Direction);
 
 /// <summary>
@@ -34,7 +34,7 @@ void entry(void) {
 	// ↑→↑←↑←←↓→↓←↓↓↓→↑→↓→→→↑←←↑→↑→↑↑←
 
 	// 题目。
-	Cell puzzle[N][N] = {
+	Cell puzzle[LAYERS_COUNT][LAYERS_COUNT] = {
 		{ 1, 1, 1, 0, 1, 1 },
 		{ 1, 1, 1, 1, 0, 1 },
 		{ 1, 1, 1, 1, 1, 1 },
@@ -49,7 +49,7 @@ void entry(void) {
 	Direction solution[PUZZLE_CELLS_COUNT] = { 0 };
 
 	// 状态表。
-	Cell status_map[N][N] = { { 0 } };
+	Cell status_map[LAYERS_COUNT][LAYERS_COUNT] = { { 0 } };
 
 	// 起终点坐标（终点坐标不需要，仅用于调试）。
 	Coordinate start = { .x = 3, .y = 2 };
@@ -61,9 +61,9 @@ void entry(void) {
 /// 打印盘面。
 /// </summary>
 /// <param name="puzzle">盘面。用过的格子用井号占位；否则空格占位。</param>
-static void print_puzzle(const Cell(*const puzzle)[N]) {
-	for (int i = 0; i < N; i++) {
-		for (int j = 0; j < N; j++) {
+static void print_puzzle(const Cell(*const puzzle)[LAYERS_COUNT]) {
+	for (int i = 0; i < LAYERS_COUNT; i++) {
+		for (int j = 0; j < LAYERS_COUNT; j++) {
 			printf("%c", puzzle[i][j] ? '#' : ' ');
 		}
 		printf("\n");
@@ -82,8 +82,8 @@ static void print_puzzle(const Cell(*const puzzle)[N]) {
 /// <param name="index">当前走到了第几个单元格。</param>
 /// <returns>是否找到了题目的解。用于判断和递归返回。</returns>
 static bool dfs(
-	const Cell(*const puzzle)[N],
-	Cell(*status_map)[N],
+	const Cell(*const puzzle)[LAYERS_COUNT],
+	Cell(*status_map)[LAYERS_COUNT],
 	Coordinate current,
 	Direction *solution,
 	int index
@@ -134,9 +134,9 @@ static bool dfs(
 /// <param name="puzzle">题目，用于比对格子是否需要参与校验。</param>
 /// <param name="status_map">状态表。</param>
 /// <returns>布尔值，表示是否所有单元格都用过（解决了）。</returns>
-static bool is_solved(const Cell(*const puzzle)[N], const Cell(*const status_map)[N]) {
-	for (int i = 0; i < N; i++) {
-		for (int j = 0; j < N; j++) {
+static bool is_solved(const Cell(*const puzzle)[LAYERS_COUNT], const Cell(*const status_map)[LAYERS_COUNT]) {
+	for (int i = 0; i < LAYERS_COUNT; i++) {
+		for (int j = 0; j < LAYERS_COUNT; j++) {
 			if (puzzle[i][j] && !status_map[i][j]) {
 				// 题目使用了这个格子，但是这个单元格还是 0 的状态（没用过）。
 				return false;
@@ -155,9 +155,9 @@ static bool is_solved(const Cell(*const puzzle)[N], const Cell(*const status_map
 /// <param name="puzzle">盘面。</param>
 /// <param name="status_map">状态表。</param>
 /// <returns>布尔值表示是否合法。</returns>
-static inline bool is_valid_coordinate(Coordinate coordinate, const Cell(*const puzzle)[N], const Cell(*const status_map)[N]) {
+static inline bool is_valid_coordinate(Coordinate coordinate, const Cell(*const puzzle)[LAYERS_COUNT], const Cell(*const status_map)[LAYERS_COUNT]) {
 	// 检查坐标是否越界。
-	if (coordinate.x < 0 || coordinate.x >= N || coordinate.y < 0 || coordinate.y >= N) {
+	if (coordinate.x < 0 || coordinate.x >= LAYERS_COUNT || coordinate.y < 0 || coordinate.y >= LAYERS_COUNT) {
 		return false;
 	}
 

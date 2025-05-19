@@ -3,16 +3,16 @@
 #include "../DataStructures/Utils.h"
 #include <stdio.h>
 
-#define N 6
+#define LAYERS_COUNT 6
 #define M 3
 #define BUFFER_SIZE 20
 
-void get_subsets(int, int, int *const, const int[N], int (*)[M], int *const);
+void get_subsets(int, int, int *const, const int[LAYERS_COUNT], int (*)[M], int *const);
 int combination_of(int, int);
 int factorial(int);
 
 void entry(void) {
-	const int values[N] = { 1, 2, 3, 4, 5, 6 };
+	const int values[LAYERS_COUNT] = { 1, 2, 3, 4, 5, 6 };
 
 	// Visual Studio 不支持 VLA（变长数组）特性，因为这里要用二维数组存结果
 	// （整个是个大列表，每一个元素又是 M 个元素的数组），
@@ -20,7 +20,7 @@ void entry(void) {
 	int buffer[BUFFER_SIZE][M] = { { 0 } };
 	int temp_array[M] = { 0 };
 	int z = 0;
-	get_subsets(N, M, temp_array, values, buffer, &z);
+	get_subsets(LAYERS_COUNT, M, temp_array, values, buffer, &z);
 
 	printf("[\n");
 	for (int i = 0; i < BUFFER_SIZE; i++) {
@@ -39,7 +39,7 @@ void entry(void) {
 /// <param name="values">整个数字序列。</param>
 /// <param name="result">记录结果的序列。需要预先分配内存。</param>
 /// <param name="z">表示当前记录了多少个元素。</param>
-static void get_subsets(int last, int index, int *const temp_array, const int values[N], int (*result)[M], int *const z) {
+static void get_subsets(int last, int index, int *const temp_array, const int values[LAYERS_COUNT], int (*result)[M], int *const z) {
 	for (int i = last; i >= index; i--) {
 		temp_array[index - 1] = values[i - 1];
 		if (index > 1) {

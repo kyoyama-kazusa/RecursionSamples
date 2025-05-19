@@ -117,6 +117,9 @@
     <ClInclude Include="RecursionToIteration\Factorial.h">
       <Filter>7 递归转循环</Filter>
     </ClInclude>
+    <ClInclude Include="DepthFirstSearching\GetLockedBlocks.h">
+      <Filter>4 深度优先</Filter>
+    </ClInclude>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="DataStructures\BinaryTree.c">
