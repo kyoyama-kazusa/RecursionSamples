@@ -1,6 +1,6 @@
 #define _CRT_SECURE_NO_WARNINGS
 
-#include "DepthFirstSearching/GetLockedBlocks.h"
+#include "DivideAndConquer/KaratsubaMultiplication.h"
 
 /// <summary>
 /// 程序主入口点。

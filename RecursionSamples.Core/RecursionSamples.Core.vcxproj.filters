@@ -31,20 +31,23 @@
     <Filter Include="4 深度优先">
       <UniqueIdentifier>{37fe8dac-1683-46c3-8a2e-6380bfc15a61}</UniqueIdentifier>
     </Filter>
-    <Filter Include="5 剪枝">
-      <UniqueIdentifier>{6184230f-2411-4748-9053-7c104c700624}</UniqueIdentifier>
-    </Filter>
-    <Filter Include="6 alpha-beta 剪枝">
-      <UniqueIdentifier>{73b6a80b-7ed6-4dee-ab8f-29a14ddcab23}</UniqueIdentifier>
-    </Filter>
     <Filter Include="0 数据结构\顺序表">
       <UniqueIdentifier>{48e045cd-6150-4da2-a84d-e136c704b7bc}</UniqueIdentifier>
     </Filter>
     <Filter Include="0 数据结构\栈">
       <UniqueIdentifier>{b249baf6-340b-47ca-80e7-5a8fab4b3b28}</UniqueIdentifier>
     </Filter>
-    <Filter Include="7 递归转循环">
+    <Filter Include="8 递归转循环">
       <UniqueIdentifier>{a8ffbc87-6ca0-470b-a721-fef00c043be2}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="7 alpha-beta 剪枝">
+      <UniqueIdentifier>{73b6a80b-7ed6-4dee-ab8f-29a14ddcab23}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="6 剪枝">
+      <UniqueIdentifier>{6184230f-2411-4748-9053-7c104c700624}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="5 分治法">
+      <UniqueIdentifier>{b2bbae3d-9e98-4a97-a0a0-9043f2128119}</UniqueIdentifier>
     </Filter>
   </ItemGroup>
   <ItemGroup>
@@ -78,16 +81,7 @@
     <ClInclude Include="Recursion\GetSubsets.h">
       <Filter>1 普通递归</Filter>
     </ClInclude>
-    <ClInclude Include="Recursion\Hanoi.h">
-      <Filter>1 普通递归</Filter>
-    </ClInclude>
     <ClInclude Include="Recursion\IsEven.h">
-      <Filter>1 普通递归</Filter>
-    </ClInclude>
-    <ClInclude Include="Recursion\MergeSort.h">
-      <Filter>1 普通递归</Filter>
-    </ClInclude>
-    <ClInclude Include="Recursion\QuickSort.h">
       <Filter>1 普通递归</Filter>
     </ClInclude>
     <ClInclude Include="Recursion\TraverseBinaryTree.h">
@@ -106,7 +100,7 @@
       <Filter>4 深度优先</Filter>
     </ClInclude>
     <ClInclude Include="AlphaBetaPruning\TicTacToe.h">
-      <Filter>6 alpha-beta 剪枝</Filter>
+      <Filter>7 alpha-beta 剪枝</Filter>
     </ClInclude>
     <ClInclude Include="DataStructures\List.h">
       <Filter>0 数据结构\顺序表</Filter>
@@ -115,10 +109,22 @@
       <Filter>0 数据结构\栈</Filter>
     </ClInclude>
     <ClInclude Include="RecursionToIteration\Factorial.h">
-      <Filter>7 递归转循环</Filter>
+      <Filter>8 递归转循环</Filter>
     </ClInclude>
     <ClInclude Include="DepthFirstSearching\GetLockedBlocks.h">
       <Filter>4 深度优先</Filter>
+    </ClInclude>
+    <ClInclude Include="DivideAndConquer\KaratsubaMultiplication.h">
+      <Filter>5 分治法</Filter>
+    </ClInclude>
+    <ClInclude Include="DivideAndConquer\Hanoi.h">
+      <Filter>5 分治法</Filter>
+    </ClInclude>
+    <ClInclude Include="DivideAndConquer\QuickSort.h">
+      <Filter>5 分治法</Filter>
+    </ClInclude>
+    <ClInclude Include="DivideAndConquer\MergeSort.h">
+      <Filter>5 分治法</Filter>
     </ClInclude>
   </ItemGroup>
   <ItemGroup>
@@ -141,7 +147,7 @@
       <Filter>0 数据结构</Filter>
     </ClCompile>
     <ClCompile Include="AlphaBetaPruning\TicTacToe.c">
-      <Filter>6 alpha-beta 剪枝</Filter>
+      <Filter>7 alpha-beta 剪枝</Filter>
     </ClCompile>
     <ClCompile Include="Program.c" />
     <ClCompile Include="DataStructures\List.c">
