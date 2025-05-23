@@ -138,6 +138,7 @@
     <ClInclude Include="DataStructures\Utils.h" />
     <ClInclude Include="DepthFirstSearching\GetLockedBlocks.h" />
     <ClInclude Include="DepthFirstSearching\HamiltonianPath.h" />
+    <ClInclude Include="DivideAndConquer\BinarySearch.h" />
     <ClInclude Include="DivideAndConquer\Hanoi.h" />
     <ClInclude Include="DivideAndConquer\KaratsubaMultiplication.h" />
     <ClInclude Include="DivideAndConquer\MergeSort.h" />

@@ -126,6 +126,9 @@
     <ClInclude Include="DivideAndConquer\MergeSort.h">
       <Filter>5 分治法</Filter>
     </ClInclude>
+    <ClInclude Include="DivideAndConquer\BinarySearch.h">
+      <Filter>5 分治法</Filter>
+    </ClInclude>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="DataStructures\BinaryTree.c">

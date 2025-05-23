@@ -1,6 +1,6 @@
 #define _CRT_SECURE_NO_WARNINGS
 
-#include "DivideAndConquer/KaratsubaMultiplication.h"
+#include "DivideAndConquer/BinarySearch.h"
 
 /// <summary>
 /// 程序主入口点。
