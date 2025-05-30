@@ -12,17 +12,14 @@
   * 栈 `Stack`
   * 二叉树 `BinaryTree`
   * 用于项目内操作的数据结构
-	* 方向和坐标 `Coordinate` 和 `Direction`
-	* 数独盘面 `SudokuGrid`
-	* 井字棋盘面 `TicTacToeBoard`
+  * 方向和坐标 `Coordinate` 和 `Direction`
+  * 数独盘面 `SudokuGrid`
+  * 井字棋盘面 `TicTacToeBoard`
 * 普通递归
   * 阶乘计算
   * 斐波那契数列
   * 求子集
-  * 汉诺塔
   * 是否是偶数
-  * 归并排序
-  * 快速排序
   * 遍历二叉树
 * 尾递归
   * 阶乘计算
@@ -31,6 +28,12 @@
   * 数独回溯解题
 * 深度优先
   * 哈密顿图一笔画游戏解题
+* 分治法
+  * 汉诺塔
+  * Karatsuba 算法（大整数乘法）
+  * 归并排序
+  * 快速排序
+
 * alpha-beta 剪枝
   * 井字棋 AI 简易版算法
 
